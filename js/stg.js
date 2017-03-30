@@ -4,8 +4,6 @@
 "use strict";
 
 var $window = $(window);
-//"https://api.github.com/repos/NickeManarin/ScreenToGif/releases/latest"
-//https://api.github.com/arvin0/H5PracticeEditor/releases/latest
 function GetLatestReleaseInfo() {
     $.getJSON("https://api.github.com/repos/arvin0/H5PracticeEditor/releases/latest").done(function(release) {
         InitDownloadButton(release, ".stg-download", 0);
